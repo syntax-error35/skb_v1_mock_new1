@@ -64,8 +64,6 @@ import { mockApi } from "@/lib/mockData";
 import { Tournament, Participant } from "@/types/tournament";
 import { toast } from "sonner";
 
-// app/admin/tournaments/[id]/participants/page.tsx
-
 
 /**
  * Participant status configuration for badges and filtering
