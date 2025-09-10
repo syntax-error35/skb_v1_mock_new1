@@ -64,6 +64,21 @@ import { mockApi } from "@/lib/mockData";
 import { Tournament, Participant } from "@/types/tournament";
 import { toast } from "sonner";
 
+// app/admin/tournaments/[id]/participants/page.tsx
+
+export async function generateStaticParams() {
+  // Pretend we fetch from mock API
+  const tournaments = await mockApi.getTournaments();
+
+  if (!tournaments.success || !tournaments.data) {
+    return [];
+  }
+
+  return tournaments.data.map((t: { id: string }) => ({
+    id: t.id.toString(), // must be string
+  }));
+}
+
 /**
  * Participant status configuration for badges and filtering
  */
