@@ -11,6 +11,7 @@ import {
   Users, 
   Bell, 
   Image, 
+  Trophy,
   Menu, 
   LogOut,
   Shield,
@@ -27,6 +28,7 @@ const navigation = [
   { name: 'Dashboard', href: '/admin/dashboard', icon: LayoutDashboard },
   { name: 'Members', href: '/admin/members', icon: Users },
   { name: 'Notices', href: '/admin/notices', icon: Bell },
+  { name: 'Tournaments', href: '/admin/tournaments', icon: Trophy },
   { name: 'Gallery', href: '/admin/gallery', icon: Image },
 ];
 
